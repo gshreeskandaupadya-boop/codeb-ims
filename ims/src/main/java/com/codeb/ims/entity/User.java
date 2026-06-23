@@ -26,7 +26,7 @@ public class User {
     @Column(nullable = false, length = 50)
     private String role;
 
-    @Column(columnDefinition = "ENUM('active', 'inactive') DEFAULT 'active'")
+    @Column(nullable = false, length = 20)
     private String status = "active";
 
     @Column(name = "created_at", updatable = false)
